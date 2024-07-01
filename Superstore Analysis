@@ -30,7 +30,8 @@
 
 ---
 
-**Query #1**
+#Getting column names and an example of the type of data each column contains in a new data set.
+**Query #1** 
 
     SELECT *
     FROM superstore
@@ -46,6 +47,8 @@
 | 5       | Wireless Bluetooth Speaker   | Electronics      | 39.99  | 60             | 4.20           |
 
 ---
+
+#Getting basic statistical data. In this case, listing items from most to least expensive
 **Query #2**
 
     SELECT *
@@ -72,6 +75,8 @@
 | 15      | Cozy Throw Blanket           | Furnishings      | 24.99  | 100            | 4.20           |
 
 ---
+
+# How many items fall into the appliances category
 **Query #3**
 
     SELECT COUNT(category)
@@ -84,6 +89,8 @@
 | 3               |
 
 ---
+
+# Average price of items listed under the category "Kitchen Supplies"
 **Query #4**
 
     SELECT AVG(price)
@@ -96,6 +103,8 @@
 | 58.607500  |
 
 ---
+
+# Total number of items in stock per item category
 **Query #5**
 
     SELECT category, SUM(stock_quantity)
